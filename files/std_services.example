@@ -1,0 +1,13 @@
+puppet:
+  ensure: running
+firewalld:
+  ensure: running
+crond:
+  ensure: running
+postfix:
+  ensure: running
+rsyslog:
+  ensure: running
+sshd:
+  ensure: running
+

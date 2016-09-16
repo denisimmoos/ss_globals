@@ -1,0 +1,204 @@
+/root/.ssh:
+  ensure: directory
+  mode: '0700'
+  owner: root
+  group: root
+/root/.ssh/authorized_keys:
+  ensure: present
+  mode: '0600'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/root/.ssh/authorized_keys.erb
+/home/admin:
+  ensure: directory
+  mode: '0750'
+  owner: admin
+  group: admin
+/home/admin/.ssh:
+  ensure: directory
+  mode: '0700'
+  owner: admin
+  group: admin
+/home/admin/.ssh/authorized_keys:
+  ensure: present
+  mode: '0600'
+  owner: admin
+  group: admin
+  source: puppet:///modules/ss_globals/home/admin/.ssh/authorized_keys.erb
+/home/monitor:
+  ensure: directory
+  mode: '0750'
+  owner: monitor
+  group: monitor
+/home/monitor/.ssh:
+  ensure: directory
+  mode: '0700'
+  owner: monitor
+  group: monitor
+/home/monitor/.ssh/authorized_keys:
+  ensure: present
+  mode: '0600'
+  owner: monitor
+  group: monitor
+  source: puppet:///modules/ss_globals/home/monitor/.ssh/authorized_keys.erb
+/home/customer:
+  ensure: directory
+  mode: '0750'
+  owner: customer
+  group: customer
+/home/customer/.ssh:
+  ensure: directory
+  mode: '0700'
+  owner: customer
+  group: customer
+/home/customer/.ssh/authorized_keys:
+  ensure: present
+  mode: '0600'
+  owner: customer
+  group: customer
+  source: puppet:///modules/ss_globals/home/customer/.ssh/authorized_keys.erb
+/etc/hosts:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/hosts.erb
+/etc/motd:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/motd.erb
+/etc/sudo.conf:
+  ensure: present
+  mode: '0640'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudo.conf.erb
+/etc/sudoers:
+  ensure: present
+  mode: '0440'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudoers.erb
+/etc/sudo-ldap.conf:
+  ensure: present
+  mode: '0640'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudo-ldap.conf.erb
+/etc/sudoers.d/admin:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudoers.d/admin.erb
+/etc/sudoers.d/customer:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudoers.d/customer.erb
+/etc/sudoers.d/monitor:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/sudoers.d/monitor.erb
+/etc/ssh/ssh_config:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/ssh/ssh_config.erb
+/etc/ssh/sshd_config:
+  ensure: present
+  mode: '0600'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/etc/ssh/sshd_config.erb
+/root/.bash_logout:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/home/default/.bash_logout.erb
+/home/admin/.bash_logout:
+  ensure: present
+  mode: '0644'
+  owner: admin
+  group: admin
+  source: puppet:///modules/ss_globals/home/default/.bash_logout.erb
+/home/monitor/.bash_logout:
+  ensure: present
+  mode: '0644'
+  owner: monitor
+  group: monitor
+  source: puppet:///modules/ss_globals/home/default/.bash_logout.erb
+/home/customer/.bash_logout:
+  ensure: present
+  mode: '0644'
+  owner: customer
+  group: customer
+  source: puppet:///modules/ss_globals/home/default/.bash_logout.erb
+/root/.bash_profile:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/home/default/.bash_profile.erb
+/home/admin/.bash_profile:
+  ensure: present
+  mode: '0644'
+  owner: admin
+  group: admin
+  source: puppet:///modules/ss_globals/home/default/.bash_profile.erb
+/home/monitor/.bash_profile:
+  ensure: present
+  mode: '0644'
+  owner: monitor
+  group: monitor
+  source: puppet:///modules/ss_globals/home/default/.bash_profile.erb
+/home/customer/.bash_profile:
+  ensure: present
+  mode: '0644'
+  owner: customer
+  group: customer
+  source: puppet:///modules/ss_globals/home/default/.bash_profile.erb
+/root/.bashrc:
+  ensure: present
+  mode: '0644'
+  owner: root
+  group: root
+  source: puppet:///modules/ss_globals/home/default/.bashrc.erb
+/home/admin/.bashrc:
+  ensure: present
+  mode: '0644'
+  owner: admin
+  group: admin
+  source: puppet:///modules/ss_globals/home/default/.bashrc.erb
+/home/monitor/.bashrc:
+  ensure: present
+  mode: '0644'
+  owner: monitor
+  group: monitor
+  source: puppet:///modules/ss_globals/home/default/.bashrc.erb
+/home/customer/.bashrc:
+  ensure: present
+  mode: '0644'
+  owner: customer
+  group: customer
+  source: puppet:///modules/ss_globals/home/default/.bashrc.erb
+/home/monitor/.bash_history:
+  ensure: present
+  mode: '0600'
+  owner: monitor
+  group: monitor
+  source: puppet:///modules/ss_globals/home/default/.bash_history.erb
+/home/customer/.bash_history:
+  ensure: present
+  mode: '0600'
+  owner: customer
+  group: customer
+  source: puppet:///modules/ss_globals/home/default/.bash_history.erb
+

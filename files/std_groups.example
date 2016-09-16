@@ -1,0 +1,9 @@
+admin:
+  ensure: present
+  gid: 2000
+monitor:
+  ensure: present
+  gid: 2100
+customer:
+  ensure: present
+  gid: 3000

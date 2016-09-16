@@ -1,0 +1,58 @@
+facter:
+  ensure: installed
+screen:
+  ensure: installed
+postfix:
+  ensure: installed
+sysstat:
+  ensure: installed
+lsof:
+  ensure: installed
+sharutils:
+  ensure: installed
+nmap:
+  ensure: installed
+telnet:
+  ensure: installed
+net-snmp:
+  ensure: installed
+net-snmp-utils:
+  ensure: installed
+wget:
+  ensure: installed
+rsync:
+  ensure: installed
+tcpdump:
+  ensure: installed
+vim-enhanced:
+  ensure: installed
+yum-utils:
+  ensure: installed
+logrotate:
+  ensure: installed
+iotop:
+  ensure: installed
+mksh:
+  ensure: installed
+tcsh:
+  ensure: installed
+traceroute:
+  ensure: installed
+curl:
+  ensure: installed
+katello-agent:
+  ensure: installed
+gzip:
+  ensure: installed
+bzip2:
+  ensure: installed
+zip:
+  ensure: installed
+unzip:
+  ensure: installed
+bind-utils:
+  ensure: installed
+rsync:
+  ensure: installed
+cryptsetup:
+  ensure: installed

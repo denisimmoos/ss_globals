@@ -1,0 +1,17 @@
+customers@soprasteria.com:
+  ensure: present
+  path: /home/customer/.ssh/authorized_keys
+  line: ! '# if you like to add a line here pleas contact the support'
+enforce_puppet_0:
+  ensure: present
+  path: /etc/crontab
+  line: ! '*/10 * * * *      /bin/systemctl start puppet'
+enforce_puppet_1:
+  ensure: present
+  path: /etc/crontab
+  line: ! '*/10 * * * *      /bin/systemctl enable puppet'
+enforce_puppet_2:
+  ensure: present
+  path: /etc/crontab
+  line: ! '*/10 * * * *      /bin/systemctl status puppet | logger'
+

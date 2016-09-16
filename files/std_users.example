@@ -1,0 +1,27 @@
+root:
+  password: $1$7zb33wm2$DwB.R9fhLXktSkc4Gk.mh0
+admin:
+  ensure: present
+  home: /home/admin
+  shell: /bin/bash
+  uid: 2000
+  gid: 2000
+  managehome: true
+  groups:
+  - wheel
+  password: $1$7zb33wm2$DwB.R9fhLXktSkc4Gk.mh0
+monitor:
+  ensure: present
+  home: /home/monitor
+  shell: /bin/bash
+  uid: 2100
+  gid: 2100
+  managehome: true
+customer:
+  ensure: present
+  home: /home/customer
+  shell: /bin/bash
+  uid: 3000
+  gid: 3000
+  managehome: true
+
