@@ -56,3 +56,23 @@ rsync:
   ensure: installed
 cryptsetup:
   ensure: installed
+cifs-utils:
+  ensure: installed
+xfsprogs:
+  ensure: installed
+xfsdump:
+  ensure: installed
+policycoreutils-devel:
+  ensure: installed
+hwloc:
+  ensure: installed
+hwloc-libs:
+  ensure: installed
+libhugetlbfs:
+  ensure: installed
+libhugetlbfs-utils:
+  ensure: installed
+numactl:
+  ensure: installed
+numad:
+  ensure: installed

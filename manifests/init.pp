@@ -42,12 +42,14 @@ class ss_globals (
   $std_files   		= '',
   $std_file_lines     	= '',
   $std_packages  	= '',
+  $std_yumgroups  	= '',
   $std_services  	= ''
 ) {
   create_resources(group,	$ss_globals::std_groups		)
   create_resources(user,	$ss_globals::std_users		)
   create_resources(file,	$ss_globals::std_files		)
   create_resources(package,	$ss_globals::std_packages	)
+  create_resources(yumgroup,	$ss_globals::std_yumgroups	)
   create_resources(service,	$ss_globals::std_services	)
   create_resources(file_line,	$ss_globals::std_file_lines	)
 }
